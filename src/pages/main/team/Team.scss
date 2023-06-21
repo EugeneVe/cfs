@@ -1,0 +1,62 @@
+@use "styles/Variables.scss";
+
+.team-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color-dark);
+  width: 100%;
+  padding: 120px 0 80px 0;
+  .team-label {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    @media screen and (max-width: 986px) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    .pre-label {
+      margin-right: 20px;
+      color: var(--accent-color);
+    }
+    .after-label {
+      color: var(--color-dark);
+    }
+  }
+  .content-wrapper {
+    width: var(--desktop-max-width);
+    text-align: center;
+    @media screen and (max-width: 1290px) {
+      width: 960px;
+    }
+    @media screen and (max-width: 986px) {
+      width: 100%;
+    }
+    .team-text-wrapper {
+      color: var(--color-dark);
+      .title-text {
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 46px;
+        margin-bottom: 30px;
+      }
+      .main-tetx {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 40px;
+      }
+    }
+    .personal-card-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+}
